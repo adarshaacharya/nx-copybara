@@ -14,7 +14,7 @@ jobs:
           ssh_key: ${{ secrets.SSH_KEY }}
           access_token: ${{ secrets.GH_TOKEN }}
           sot_repo: adarshaacharya/nx-copybara
-          destination_repo: adarshaacharya/copybara-destination
+          destination_repo: adarshaacharya/copybara-d estination
           push_include: '.github/workflows/build-pr.yml .github/workflows/move-code.yml apps/blog*/** libs/** externals/blog/** tools/** .*rc .*ignore *.json *.js *.lock'
           push_exclude: 'nx.json tsconfig.base.json workspace.json'
           pr_move: |
