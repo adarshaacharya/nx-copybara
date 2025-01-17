@@ -1,8 +1,10 @@
 on:
   push:
   pull_request_target:
+    branches:
+      - main
 jobs:
-  move-code:
+  move-code:z
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
